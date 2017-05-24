@@ -70,6 +70,8 @@ $ node pets.js read -1
 Usage: node pets.js read INDEX
 ```
 
+**// THIS IS WHERE ITS PASSING TO, ABOVE & NOT BELOW //**
+
 Finally, your application must also handle the `create` subcommand. Only when given an `age`, `kind`, and `name` will it create a record in the database. Remember to convert the `age` into an integer. For example:
 
 ```shell

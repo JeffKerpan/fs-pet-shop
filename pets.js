@@ -4,13 +4,6 @@ var fs = require('fs');
 // var pets = require('./pets.json');
 var cmd = process.argv[2];
 
-// switch(process.argv[2]) {
-//   case 'read':
-//   console.log(pets[process.argv[3]]);
-//   break;
-//   case''
-// }
-
 if (cmd === 'read') {
   fs.readFile('./pets.json', 'utf8', function(err, data) {
     if (err) {
@@ -26,7 +19,7 @@ if (cmd === 'read') {
     }
 
     // console.log(pets);
-    // console.log(pets[process.argv[3]]);
+    
   });
 } else if (cmd === 'create') {
   fs.readFile('./pets.json', 'utf8', function(readErr, data) {
